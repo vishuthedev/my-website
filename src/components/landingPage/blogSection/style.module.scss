@@ -1,0 +1,273 @@
+@import "../../../styles/globals.scss";
+@import "../../../styles/_variables";
+
+.main-container {
+  background-color: $bg-color;
+  padding: 50px 0px 100px 0px;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 40px 16px 40px 16px;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    padding: 40px 16px 40px 16px;
+  }
+}
+
+.main-head {
+  width: 55%;
+  @media screen and (max-width: $breakpoint-md) {
+    width: 100%;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    width: 100%;
+  }
+}
+
+
+.container,
+.services {
+  max-width: 1170px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  @media screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    flex-direction: column;
+  }
+}
+
+.main-head h6,
+.work-title h6 {
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-family: $bs-work-sans-font-family;
+  font-style: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: $blue-color;
+}
+
+.main-head h1,
+.box-title h3 {
+  font-size: 60px;
+  @media screen and (max-width: $breakpoint-md) {
+    font-size: 45px;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    font-size: 45px;
+  }
+}
+
+.main-head h1,
+.box-title h3,
+.work-title h2 {
+  font-family: $bs-work-sans-font-family;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.111em;
+  margin-bottom: 16px;
+}
+
+.main-head h1,
+.box-title h3 {
+  color: $white-color;
+}
+
+.work-title h2 {
+  color: #0e0f20;
+  font-size: 32px;
+}
+
+.work-title h2 {
+  font-size: 36px;
+}
+
+.main-head p {
+  font-size: 16px;
+  font-family: $bs-work-sans-font-family;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin-bottom: 16px;
+  color: #ffffff99;
+  margin-bottom: 32px;
+}
+.box-title {
+  display: flex;
+}
+
+.box-title h3 {
+  max-width: 75%;
+}
+
+.box {
+  transition:
+    0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
+}
+
+.custom-btn {
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-radius: 100px 100px 100px 100px;
+  padding: 16px 32px 16px 32px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-family: $bs-work-sans-font-family;
+  font-style: normal;
+}
+
+.services-box {
+  background-color: $white-color;
+  width: 50%;
+  margin: 10px 10px;
+  @media screen and (max-width: $breakpoint-md) {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+.box-two {
+  background-color: #343657;
+}
+
+.box p {
+  margin-bottom: 32px;
+  font-size: 16px;
+  color: #0e0f2099;
+  font-family: $bs-work-sans-font-family;
+  line-height: 1.5em;
+}
+
+.work-btn {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  margin: 31px 0px;
+}
+
+.work-button {
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-radius: 100px 100px 100px 100px;
+  padding: 16px 32px 16px 32px;
+  background-color: #db3647;
+  color: #fff;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-family: $bs-work-sans-font-family;
+  font-style: normal;
+}
+
+.testimonial-section {
+  background-color: #0e0f20;
+  opacity: 0.9;
+  transition:
+    border-radius 0.3s,
+    opacity 0.3s;
+  padding: 100px 0px 200px 0px;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0px 0px 0px 0px;
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 0px 0px 0px 0px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0px 0px 0px 0px;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    padding: 0px 0px 0px 0px;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+
+
+.blog-details {
+  padding: 16px 16px 16px 16px;
+}
+
+.blog-details p {
+  font-size: 12px;
+  // font-family: $bs-work-sans-font-family;
+  margin-bottom: 8px;
+}
+
+.date{
+  font-size: 12px;
+  font-family: $bs-work-sans-font-family;
+  margin-bottom: 8px;
+}
+
+.client-name {
+  padding: 16px 0px 0px 30px;
+}
+
+.client-name h5 {
+  font-family: $bs-work-sans-font-family;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #0e0f20;
+}
+
+.client-name h6 {
+  color: #00b9c5;
+  font-size: 13px;
+  font-family: $bs-work-sans-font-family;
+  letter-spacing: 4px;
+}
+
+//animation css
+.header-btn:hover {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+.header-btn:hover {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+.main-head .main-heading {
+  animation: fadeInDown 3s ease forwards;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

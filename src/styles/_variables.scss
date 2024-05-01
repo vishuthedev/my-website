@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+
+
+
+
+/* Set up breakpoints */
+
+/* Extra small devices (phones, 600px and down) */
+$breakpoint-xs: 600px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+$breakpoint-sm: 600px;
+/* Medium devices (landscape tablets, 768px and up) */
+$breakpoint-md: 768px;
+/* Large devices (laptops/desktops, 992px and up) */
+$breakpoint-lg: 992px;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+$breakpoint-xlg: 1200px;
+
+// font family
+$bs-work-sans-font-family:Work Sans;
+
+
+
+// Theme Color _variables
+$white-color: #ffffff;
+$bg-color: #0e0f20;
+$blue-color:#0388d8;
+
+:export {
+    //Text Colors  
+    primaryColor: $white-color;
+    aboutBgColor: $bg-color;
+    blurColor: $blue-color;
+  }
+  

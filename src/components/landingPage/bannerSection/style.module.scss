@@ -1,0 +1,176 @@
+@import "../../../styles/globals.scss";
+@import "../../../styles/_variables";
+
+.banner-section {
+  background-image: url("https://res.cloudinary.com/dh2lkjd5n/image/upload/v1698983590/hero-home_oy8rkb.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-section h1 {
+  color: $white-color;
+  font-family: $bs-work-sans-font-family;
+  font-style: normal;
+}
+
+.banner-title {
+  width: 1183px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  color: #fff;
+}
+
+.head-title {
+  width: 60%;
+  font-size: 72px;
+  margin-bottom: 32px;
+
+  @media screen and (max-width: $breakpoint-md) {
+    // width: 49%;
+    font-size: 65px;
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    width: 65%;
+    font-size: 65px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    width: 49%;
+    font-size: 50px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    width: 38%;
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    width: 32%;
+    font-size: 40px;
+  }
+}
+
+.banner-para {
+  margin: 0px 0px -32px 0px;
+  margin-bottom: 32px;
+}
+.banner-para p {
+  color: #fff;
+  margin-bottom: 32px;
+  font-size: 20px;
+  width: 60%;
+  @media screen and (max-width: $breakpoint-sm) {
+    font-size: 17px;
+    // width: 40%;
+    line-height: 1.5rem;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    font-size: 17px;
+    width: 35%;
+    line-height: 1.5rem;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    font-size: 17px;
+    width: 30%;
+    line-height: 1.5rem;
+  }
+}
+
+.custom-btn {
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-radius: 100px 100px 100px 100px;
+  padding: 16px 32px 16px 32px;
+  background-color: #db364700;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: sans-serif;
+  border: 2px solid;
+  font-family: $bs-work-sans-font-family;
+  font-style: normal;
+}
+
+.banner-subsection {
+  background-color: rgb(0 0 0 / 57%);
+  padding: 225px 0px 150px 0px;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    padding: 160px 16px 80px 16px;
+  } 
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 160px 16px 80px 16px; /* Adjust the padding as needed for smaller screens */
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    padding: 160px 16px 80px 16px; /* Adjust the padding as needed for smaller screens */
+  }
+}
+
+.header-btn:hover {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+.header-btn:hover {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes head-title {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.head-title {
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+}
+
+.head-title {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+.head-title {
+  animation: fadeInUp 1s ease forwards;
+}
+// .fadeInUp{}
+@keyframes fadeInUp {
+  0% {
+    transform: translate(0px, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,212 @@
+@import '../../../styles/globals.scss';
+@import '../../../styles/_variables';
+
+.main-container{
+    background-color: #00b9c5;
+    padding: 32px 0px 32px 0px;
+    color: #fff;
+    @media screen and (max-width: $breakpoint-md) {
+      padding: 32px 20px 32px 20px;
+      }
+  
+      @media screen and (max-width: $breakpoint-xs) {
+        padding: 32px 20px 32px 20px;
+      }
+}
+.container{
+    max-width: 1170px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    gap: 20px;
+    @media screen and (max-width: $breakpoint-md) {
+      display: inline-flex;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        display: inline-flex;
+      }
+}
+
+.sub-section{
+    display: flex;
+
+    @media screen and (max-width: $breakpoint-md) {
+      flex-direction: column;
+      margin: 10px 0px;
+      }
+  
+      @media screen and (max-width: $breakpoint-xs) {
+        flex-direction: column;
+        margin: 10px 0px;
+      }
+}
+.sub-section h6 {
+    font-size: 48px;
+    font-family: $bs-work-sans-font-family;
+    font-style: normal;
+    display: flex;
+    @media screen and (max-width: $breakpoint-md) {
+      width: 30%;
+        font-size: 30px;
+      }
+    @media screen and (max-width: $breakpoint-xs) {
+        width: 30%;
+        font-size: 30px;
+      }
+}
+
+.sub-section p {
+    font-size: 16px;
+    font-family: $bs-work-sans-font-family;
+    margin: 9px 11px;
+    font-style: normal;
+    @media screen and (max-width: $breakpoint-md) {
+      margin: 0px 0px;
+      width: 70%;
+      }
+    @media screen and (max-width: $breakpoint-xs) {
+        margin: 0px 0px;
+        width: 70%;
+      }
+    
+}
+
+.section-one , .section-two{
+    display: flex;
+    @media screen and (max-width: $breakpoint-md) {
+      flex-direction: column;
+      }
+    @media screen and (max-width: $breakpoint-xs) {
+       flex-direction: column;
+      }
+}
+
+.about-us{
+    background-color: $bg-color;
+    background-image: url('https://res.cloudinary.com/dh2lkjd5n/image/upload/v1700802277/shape-3_sukwpr.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding: 100px 0px 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $breakpoint-md) {
+      padding: 50px 16px 40px 16px;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        padding: 50px 16px 40px 16px;
+    }
+  
+  
+}
+
+.about{
+    max-width: 1170px;
+    width: 1183px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    color: $white-color;
+    display: flex;
+    @media screen and (max-width: $breakpoint-md) {
+      flex-direction: column;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+       flex-direction: column;
+       }
+}
+
+.about-img, .about-content{
+    width: 50%;
+    padding: 0px 20px;
+    @media screen and (max-width: $breakpoint-md) {
+      width: 100%;
+      padding: 0px 0px;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        width: 100%;
+        padding: 0px 0px;
+       }
+
+}
+
+.about-content h2{
+    font-size: 60px;
+    font-family: $bs-work-sans-font-family;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.111em;
+    margin-bottom: 32px;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 32px;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        font-size: 32px;
+       }
+}
+
+.about-content h6{
+
+    margin-bottom: 32px;
+    font-size: 13px;
+    font-family: $bs-work-sans-font-family;
+    font-style: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $blue-color;
+    @media screen and (max-width: $breakpoint-md) {
+      padding: 30px 0px 0px 0px;
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        padding: 30px 0px 0px 0px;
+        margin-bottom: 10px;
+       }
+}
+
+.about-content p{
+    font-size: 16px;
+    font-family: $bs-work-sans-font-family;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin-bottom: 32px;
+    color: #FFFFFF99;
+}
+
+.custom-btn {
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 100px 100px 100px 100px;
+    padding: 16px 32px 16px 32px;
+    background-color: #db364700;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: 2px solid;
+    font-family: $bs-work-sans-font-family;
+    font-style: normal;
+}
+
+// .fadeInUp{}
+.about-img{animation: fadeInUp 3s ease forwards;}
+
+@keyframes fadeInUp{
+  0%{transform:translate(0px, 100px); opacity: 0;}
+  100%{transform:translate(0px, 0); opacity: 1;}
+}
+
+// .fadeInDown{}
+.about-content h2 { animation: fadeInDown 3s ease forwards;}
+@keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  

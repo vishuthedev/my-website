@@ -1,0 +1,151 @@
+@import "../../../styles/globals.scss";
+@import "../../../styles/_variables";
+
+.main-container {
+  background-color: $bg-color;
+  background-image: url("https://res.cloudinary.com/dh2lkjd5n/image/upload/v1700802162/dot-pattern-1_fjwhqt.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  padding: 0px 0px 100px 0px;
+  @media screen and (max-width: $breakpoint-md) {
+   
+     padding: 0px 0px 0px 0px;
+         }
+@media screen and (max-width: $breakpoint-xs)  {
+   
+     padding: 0px 0px 0px 0px;
+ }
+}
+
+.container {
+  width: 1183px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  background-color: #e2e5f2;
+  box-shadow: 0px 10px 50px 0px
+    rgba(151.00000000000003, 154, 200.00000000000003, 0.15);
+  padding: 50px 50px 50px 50px;
+  text-align: center;
+  @media screen and (max-width: $breakpoint-md) {
+    width: auto;
+    padding: 32px 16px 32px 16px;
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    width: auto;
+    padding: 32px 16px 32px 16px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    width: auto;
+    padding: 32px 16px 32px 16px;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    width: auto;
+    padding: 32px 16px 32px 16px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    width: auto;
+    padding: 32px 16px 32px 16px;
+  }
+}
+.client-title h5 {
+  color: #333787;
+  font-size: 24px;
+  font-family: $bs-work-sans-font-family;
+  font-style: normal;
+  margin-bottom: 32px;
+  @media screen and (max-width: $breakpoint-md) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    font-size: 22px;
+  }
+}
+
+.client-logo {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  @media screen and (max-width: $breakpoint-md) {
+    gap: 16px;
+    flex-direction: column;
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    gap: 16px;
+    flex-direction: column;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    gap: 16px;
+    flex-direction: column;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    gap: 16px;
+    flex-direction: column;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    gap: 16px;
+    flex-direction: column;
+  }
+}
+
+.section-one,.section-two {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  @media screen and (max-width: $breakpoint-xs) {
+    gap: 20px;
+  }
+}
+
+.client-logo img:hover {
+  transform: translateY(-8px);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.client-logo {
+  animation: fadeInUp 2s ease forwards;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translate(0px, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+
+.client-title {
+  animation: fadeInDown 4s ease forwards;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.container{animation: fadeInUp 2s ease forwards;}
+
+@keyframes fadeInUp{
+  0%{transform:translate(0px, 100px); opacity: 0;}
+  100%{transform:translate(0px, 0); opacity: 1;}
+}

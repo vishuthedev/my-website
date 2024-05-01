@@ -1,0 +1,27 @@
+/* src/styles/Sidebar.module.css */
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  height: 100vh;
+  color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.show {
+  margin-left: 0;
+}
+
+.hide {
+  margin-left: -200px;
+}
+
+
+.toggle-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}

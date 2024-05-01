@@ -1,0 +1,281 @@
+@import "../../../styles/globals.scss";
+@import "../../../styles/_variables";
+
+.main-container {
+  background-color: $bg-color;
+  background-image: url("https://res.cloudinary.com/dh2lkjd5n/image/upload/v1700802162/dot-pattern-1_fjwhqt.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding: 0px 0px 100px 0px;
+  @media screen and (max-width: $breakpoint-xlg) {
+    padding: 50px 16px 40px 16px;
+  }
+  @media screen and (max-width: $breakpoint-lg) {
+    padding: 50px 16px 40px 16px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 50px 16px 40px 16px;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    padding: 50px 16px 40px 16px;
+  }
+}
+.main-head {
+  width: 55%;
+  @media screen and (max-width: $breakpoint-lg) {
+    width: 100%;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    width: 100%;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    width: 100%;
+  }
+}
+
+.container,
+.services {
+  max-width: 1170px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  @media screen and (max-width: $breakpoint-lg) {
+    display: inline-flex;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    display: inline-flex;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    display: inline-flex;
+  }
+}
+.main-head h6 {
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-family: $bs-work-sans-font-family;
+  font-style: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: $blue-color;
+}
+
+.main-head .main-heading,
+.box-title h3 {
+  font-size: 60px;
+  font-family: $bs-work-sans-font-family;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.111em;
+  margin-bottom: 16px;
+  color: $white-color;
+  @media screen and (max-width: $breakpoint-md) {
+    font-size: 23px;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    font-size: 23px;
+  }
+}
+
+.main-head p {
+  font-size: 16px;
+  font-family: $bs-work-sans-font-family;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin-bottom: 16px;
+  color: #ffffff99;
+  margin-bottom: 32px;
+}
+.box-title {
+  display: flex;
+}
+
+.box-title h3 {
+  max-width: 75%;
+  @media screen and (max-width: $breakpoint-md) {
+    width: 70%;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    width: 70%;
+  }
+}
+
+.box {
+  background-color: #333787;
+  transition:
+    0.3s,
+    border 0.3s,
+    border-radius 0.3s,
+    box-shadow 0.3s;
+}
+.box,
+.box-two {
+  width: 50%;
+  padding: 64px 64px 64px 64px;
+  @media screen and (max-width: $breakpoint-xlg) {
+    width: 100%;
+    padding: 32px 20px;
+  }
+  @media screen and (max-width: $breakpoint-lg) {
+    width: 100%;
+    padding: 32px 32px 32px 32px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    width: 100%;
+    padding: 32px 32px 32px 32px;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    width: 100%;
+    padding: 32px 32px 32px 32px;
+  }
+}
+
+.custom-btn {
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-radius: 100px 100px 100px 100px;
+  padding: 16px 32px 16px 32px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-family: $bs-work-sans-font-family;
+  font-style: normal;
+}
+
+.services-box {
+  display: flex;
+  @media screen and (max-width: $breakpoint-lg) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    flex-direction: column;
+  }
+}
+
+.box-two {
+  background-color: #343657;
+}
+
+.box-img {
+  @media screen and (max-width: $breakpoint-md) {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+  }
+}
+.box-two p,
+.box p {
+  color: $white-color;
+  margin-bottom: 32px;
+  line-height: 1.5em;
+}
+
+.box {
+  animation: fadeInUp 5s ease forwards;
+}
+.box-two {
+  animation: fadeInUp 5s ease forwards;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translate(0px, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+
+.main-head .main-heading {
+  animation: fadeInDown 1s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.box-red {
+  background-color: #ff0000; /* Red */
+}
+
+.box-blue {
+  background-color: #0000ff; /* Blue */
+}
+
+.box-orange {
+  background-color: #ffa500; /* Orange */
+}
+
+.box-black {
+  background-color: #38666e; /* Red */
+}
+
+.box-white {
+  background-color: #6c306c; /* Blue */
+}
+
+.box-orange {
+  background-color: #ffa500; /* Orange */
+}
+
+.fade-in-left {
+  animation: fadeInLeft 2s ease;
+}
+
+.fade-in-right {
+  animation: fadeInRight 2s ease;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
